@@ -1,5 +1,6 @@
 from crewai import Agent
-from aurora.tools.api_tools import SearchTools
+# New code in retrieval_agent.py
+from ..tools.api_tools import search_semantic_scholar_tool
 
 def create_retrieval_agent():
     """
@@ -14,7 +15,7 @@ def create_retrieval_agent():
             "With unparalleled skill in querying databases and APIs, you unearth the most pertinent "
             "documents, papers, and articles to build a solid foundation for any research task."
         ),
-        tools=[SearchTools.search_semantic_scholar],
+        tools=[search_semantic_scholar_tool],
         verbose=True,
         allow_delegation=False
     )

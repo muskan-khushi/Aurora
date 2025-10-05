@@ -1,11 +1,10 @@
 from dotenv import load_dotenv
 from crewai import Crew, Process, Task
 
-# Import your agent creation functions
-from aurora.agents.retrieval_agent import create_retrieval_agent
-from aurora.agents.critique_agent import create_critique_agent
-from aurora.agents.synthesis_agent import create_synthesis_agent
-from aurora.agents.verification_agent import create_verification_agent
+from .agents.retrieval_agent import create_retrieval_agent
+from .agents.critique_agent import create_critique_agent
+from .agents.synthesis_agent import create_synthesis_agent
+from .agents.verification_agent import create_verification_agent
 
 # Load environment variables
 load_dotenv()
