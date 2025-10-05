@@ -1,0 +1,16 @@
+[project]
+name = "aurora"
+version = "0.1.0"
+description = "An agentic AI for real-time research and knowledge synthesis."
+dependencies = [
+    "crewai",
+    "crewai-tools",
+    "langchain-community",
+    "langchain-openai",
+    "python-dotenv",
+    "chromadb",
+    "networkx",
+    "matplotlib",
+    "streamlit",
+    "semanticscholar"
+]
